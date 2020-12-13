@@ -1,0 +1,86 @@
+---
+title: "Geodaten: Aufgaben"
+date: 14. Dezember 2020
+---
+
+1. Besuchen Sie https://pleiades.stoa.org/ - worum geht es hier?
+
+2. Finden Sie den kompletten aktuellen Datensatz für „locations“ als CSV-Datei.
+
+3. Importieren Sie ihn in R und weisen Sie dem Datensatz den Namen `pleiades` zu.
+
+```{r}
+
+```
+
+4. Finden Sie geeignete Werte für (einzelne) Längen- und Breitengrade im Datensatz.
+
+5. Plotten Sie die Koordinaten auf x- und y-Achse mit `ggplot()`. Was erkennen Sie?
+
+```{r}
+
+```
+
+6. Halbieren Sie die Größe und setzen Sie den Alpha-Wert der Punkte auf 0,2. 
+
+```{r}
+
+```
+
+7. Bringen Sie die Grafik in die Merkator-Projektion.
+
+```{r}
+
+```
+
+8. Schauen Sie sich diesen Befehl an: 
+
+```{r}
+map_data("world") %>%
+  ggplot() +
+    geom_polygon(mapping = aes(x = long,
+                               y = lat,
+                               group = group)) +
+    coord_quickmap(xlim = c(-8, 40),
+                   ylim = c(26, 48))
+```
+
+9. Versuchen Sie, jede einzelne Zeile nachzuvollziehen, indem Sie die entsprechenden Funktionen recherchieren.
+
+10. Führen Sie den Befehl aus.
+
+11. Ändern Sie die Farbe der Flächen in hellgrau.
+
+```{r}
+
+```
+
+12. Wählen Sie einen Kartenausschnitt, auf dem Portugal, Ägypten, Irak und Frankreich komplett zu sehen sind.
+
+```{r}
+
+```
+
+13. Plotten Sie auf diesem Hintergrund den Datensatz `pleiades`. Passen Sie dabei die Parameter so an, dass es Ihnen optisch zusagt.
+
+```{r}
+
+```
+
+14. Wählen Sie für die Karte die [Bonnesche Projektion](https://de.wikipedia.org/wiki/Bonnesche_Projektion) mit Standardparallele bei 40°N.
+
+```{r}
+
+```
+
+15. Entfernen Sie alle Achsenbeschriftungen.
+
+```{r}
+
+```
+
+16. (Achtung: extrem knifflig!) Bilden Sie diese Grafik (siehe Online-Syllabus) nach, die die Orte geordnet nach ältestem Fund darstellt:
+
+```{r}
+
+```

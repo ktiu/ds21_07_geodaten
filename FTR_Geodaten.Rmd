@@ -1,0 +1,15 @@
+---
+title: "Geodaten"
+date: 14. Dezember 2020
+---
+
+## Voraussetzungen
+
+## Exkurs: Pipes
+
+## Daten importieren
+
+## Überblick verschaffen
+
+## Visualisieren
+
